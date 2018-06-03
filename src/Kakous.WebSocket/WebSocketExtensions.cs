@@ -15,7 +15,6 @@ namespace Kakous.WebSocket
 				if (type.GetTypeInfo().BaseType == typeof(WebSocketHandler))
 					services.AddSingleton(type);
 			}
-
 			return services;
 		}
 

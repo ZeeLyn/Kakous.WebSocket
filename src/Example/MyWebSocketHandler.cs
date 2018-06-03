@@ -15,10 +15,10 @@ namespace Example
 		{
 		}
 
-		//public override string OnConnected(HttpContext context, WebSocket socket)
-		//{
-		//	return base.OnConnected(context, socket, "1");
-		//}
+		public override string OnConnected(HttpContext context, WebSocket socket)
+		{
+			return base.OnConnected(context, socket);
+		}
 
 		public override async Task ReceiveAsync(WebSocket sender, string message)
 		{
