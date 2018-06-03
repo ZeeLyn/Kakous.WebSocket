@@ -4681,7 +4681,7 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "Kakous.WebSocket.NetCore/1.0.0": {
+      "Kakous.WebSocket.NetCore/1.0.1": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -12513,7 +12513,7 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "Kakous.WebSocket.NetCore/1.0.0": {
+    "Kakous.WebSocket.NetCore/1.0.1": {
       "type": "project",
       "path": "../Kakous.WebSocket/Kakous.WebSocket.csproj",
       "msbuildProject": "../Kakous.WebSocket/Kakous.WebSocket.csproj"
@@ -12521,7 +12521,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Kakous.WebSocket.NetCore >= 1.0.0",
+      "Kakous.WebSocket.NetCore >= 1.0.1",
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -12552,8 +12552,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://ci.appveyor.com/nuget/fsgit-fsharp": {},
-        "https://dotnet.myget.org/F/aspnetcore-master/api/v3/index.json": {}
+        "https://ci.appveyor.com/nuget/fsgit-fsharp": {}
       },
       "frameworks": {
         "netcoreapp2.0": {

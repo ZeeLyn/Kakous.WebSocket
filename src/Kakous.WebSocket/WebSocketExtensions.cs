@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,8 +19,7 @@ namespace Kakous.WebSocket
 			return services;
 		}
 
-		public static IApplicationBuilder UseKakousWebSocket(this IApplicationBuilder app, PathString path,
-			WebSocketHandler handler)
+		public static IApplicationBuilder UseKakousWebSocket(this IApplicationBuilder app, PathString path, WebSocketHandler handler)
 		{
 			app.UseWebSockets();
 			return app.Map(path, _app => _app.UseMiddleware<WebSocketMiddleware>(handler));

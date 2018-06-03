@@ -17,12 +17,12 @@ namespace Example
 
 		public override string OnConnected(HttpContext context, WebSocket socket)
 		{
-			return base.OnConnected(context, socket);
+			return base.OnConnected(context, socket, "1");
 		}
 
 		public override async Task ReceiveAsync(WebSocket sender, string message)
 		{
-			await SendMessageToAllAsync("收到：" + message);
+			await SendMessageAsync("1", "收到：" + message);
 
 		}
 	}
