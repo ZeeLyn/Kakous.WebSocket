@@ -1,6 +1,6 @@
 # Kakous.WebSocket
 
-### 注册中间件
+### register middleware
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
@@ -19,7 +19,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, IService
 }
 ```
 
-### 定义消息处理handler
+### custom message handler
 ```csharp
 public class MyWebSocketHandler : WebSocketHandler
 {
